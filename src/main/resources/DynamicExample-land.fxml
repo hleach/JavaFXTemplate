@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+
+<GridPane id="landscapegrid" xmlns:fx="http://javafx.com/fxml/1" gridLinesVisible="true" >
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="2.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" prefWidth="1.7976931348623157E308" maxWidth="100000.0" minWidth="0.0" />
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="1.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="24.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="2.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="24.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" percentWidth="2.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES" minHeight="25" maxHeight="25" prefHeight="25" />
+        <RowConstraints vgrow="SOMETIMES" minHeight="25" maxHeight="25" prefHeight="25" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="10.0" />
+        <RowConstraints vgrow="SOMETIMES" prefHeight="1.7976931348623157E308" maxHeight="100000.0" minHeight="0.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="10.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="10.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="10.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="10.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="10.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="10.0" />
+        <RowConstraints vgrow="SOMETIMES" percentHeight="2.0" />
+    </rowConstraints>
+    <children>
+        <AnchorPane fx:id="myapppane" prefHeight="1.7976931348623157E308" prefWidth="1.7976931348623157E308" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="7" GridPane.rowSpan="2"  GridPane.fillWidth="true" GridPane.hgrow="ALWAYS"  />
+        <Label fx:id="testLabel" text="This is a label!" GridPane.columnIndex="1" GridPane.rowIndex="3" prefHeight="1.7976931348623157E308" prefWidth="1.7976931348623157E308" minWidth="0.0" minHeight="0.0" />
+        <Button fx:id="testButton" text="Button" onMouseClicked="#onClickFlipToStaticExample" GridPane.columnIndex="3" GridPane.rowIndex="3" prefHeight="1.7976931348623157E308" prefWidth="1.7976931348623157E308" minWidth="0.0" minHeight="0.0" />
+        <TextField fx:id="testTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="3" prefHeight="1.7976931348623157E308" prefWidth="1.7976931348623157E308" minWidth="0.0" minHeight="0.0" />
+    </children>
+    <stylesheets>
+        <URL value="@main.css" />
+    </stylesheets>    
+</GridPane>

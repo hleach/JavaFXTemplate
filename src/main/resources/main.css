@@ -1,0 +1,167 @@
+//
+// The MIT License
+//
+// Copyright (c) 2016 Heath Leach
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+@font-face {
+    font-family: Arimo;
+    src: url('font/Arimo-Regular.ttf'); /* Loaded from Resources [Main] */
+}
+
+* {
+    -col-myapp1: #565656;
+    -col-myapp2: #763233;
+    -col-text1: #d8d8d8;
+    -col-text2: black;
+    -col-error: red;
+    -col-app-white: #ffffff;
+    -col-app-grey: #d7cec7;
+    -col-app-dkblue: #282e3c;
+    -col-app-text: #444444;
+    -fx-font-family: Arimo;
+}
+
+.text-field {
+    /* Used to keep control of when software keyboard pops up */
+    -fx-skin: "com.my.mobileapp.MyTextFieldSkin";
+}
+
+.text-field, .password-field {
+    -fx-padding: 5;   
+    -fx-border-width: 1;
+    -fx-background-radius: 0;
+    -fx-font-size: 12pt;
+    -fx-focus-color: transparent;
+}
+
+.button {
+    -fx-background-color: -col-app-white;
+    -fx-background-radius: 25 25 0 0;
+    -fx-text-fill: -col-app-text;
+    -fx-font-weight: bold;
+    -fx-border-color: -col-app-grey; 
+    -fx-border-style: solid; 
+    -fx-border-width: 0 0 10 0;
+    -fx-border-insets: 0 0 -1 0;
+    -fx-font-size: 12pt;
+    -fx-padding: 2;   
+}
+
+.button:pressed {
+    -fx-background-color: -col-myapp1;
+    -fx-text-fill: -col-app-white;
+}
+
+.label {
+    -fx-font-size: 10pt;
+    -fx-text-fill: -col-text1;
+}
+
+.list-view {
+    -fx-background-color: -col-myapp1;
+    -fx-text-fill: -col-text1;
+}
+
+.list-cell {
+    -fx-background-color: -col-myapp2;
+    -fx-background-radius: 10 10 0 0;
+    -fx-text-fill: -col-text1;
+    -fx-border-color: -col-myapp1;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-border-radius: 0;
+}
+
+.list-cell:selected {
+    -fx-background-color: -col-myapp1;
+    -fx-text-fill: red;
+}
+ 
+.scroll-bar {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;  
+}
+
+.thumb {
+    -fx-background-color: -col-text1;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;  
+    
+}
+
+.increment-button , .decrement-button {
+    -fx-padding:7px;
+}
+
+.tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab {
+    -fx-background-insets: 0 1 0 1,0,0;
+    -fx-border-color: -col-app-white;
+    -fx-border-style: solid;
+    -fx-border-insets: 0;
+    -fx-border-width: 1 1 0 1;
+}
+
+.tab-pane .tab {
+    -fx-background-color: -col-app-grey;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-width: 0;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: -col-app-white;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-width: 0;
+    -fx-focus-color: transparent;
+}
+
+.tab .label {
+    -fx-text-fill: -col-app-text;
+}
+
+#maingrid {
+    -fx-background-color: -col-myapp1;
+}
+
+#insidegrid {
+    -fx-background-color: -col-myapp2;
+    -fx-border-color: -col-text1;
+    -fx-border-style: solid;
+    -fx-border-insets: 0;
+    -fx-border-width: 3;
+}
+
+#landscapegrid {
+    -fx-background-color: -col-myapp2;
+}
+
+#myapppane {
+    -fx-background-insets: 0;
+    -fx-background-position: right top;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: auto, cover;
+}

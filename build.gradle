@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.1.1'
+    }
+}
+
+apply plugin: 'org.javafxports.jfxmobile'
+
+repositories {
+    jcenter()
+}
+
+mainClassName = 'com.my.mobileapp.AppTemplate'
+
+jfxmobile {
+    android {
+        manifest = 'src/android/AndroidManifest.xml'
+        //androidSdk = 'c:/Users/heath/AppData/Local/Android/android-sdk'
+    }
+    ios {
+        infoPList = file('src/ios/Default-Info.plist')
+        iosSignIdentity = "iPhone Developer: <My developer credentials>"
+    }
+}
+
+compileJava {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+        }
+    }
+}
